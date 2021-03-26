@@ -22,6 +22,7 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 /*Category starts here*/
 
 Route::get('/category/add','App\Http\Controllers\categoryController@index')->name('show_cate_table');
-
+Route::post('/category/save','App\Http\Controllers\categoryController@save')->name('cate_save');
+Route::get('/category/manage','App\Http\Controllers\categoryController@manage')->name('manage_cate');
 /*Category ends here*/
 
