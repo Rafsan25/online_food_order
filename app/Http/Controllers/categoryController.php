@@ -25,5 +25,22 @@ class categoryController extends Controller
         $categories=category::all();
         return view('BackEnd.category.manageCategory',compact('categories'));
     }
+    public function active($category_id){
+        $category=category::find($category_id);
+        $category->category_status=1;
+        $category->save();
+        return back();
+    }
+    public function inactive($category_id){
+        $category=category::find($category_id);
+        $category->category_status=0;
+        $category->save();
+        return back();
+    }
+    public function delete($category_id){
+        $category=category::find($category_id);
+        $category->delete();
+        return back();
+    }
 
 }

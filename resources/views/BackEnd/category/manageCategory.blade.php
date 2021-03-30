@@ -16,7 +16,6 @@
                     <th>SL</th>
                     <th>Category Name</th>
                     <th>Order Number</th>
-                    <th>Created Date</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -29,18 +28,22 @@
                         {{$cate->category_name}}
                     </td>
                     <td>{{$cate->order_number}}</td>
-                    <td>{{$cate->added_on}}</td>
                     <td>
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
-                                More
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <a class="dropdown-item" href="#">Pending</a>
-                                <a class="dropdown-item" href="#">Delete</a>
-                                <a class="dropdown-item" href="#">Active</a>
-                            </div>
-                        </div>
+                        @if($cate->category_status==1)
+                            <a class="btn btn-outline-success" href="{{route('inactive_cate',['category_id'=>$cate->category_id])}}">
+                                <i class="fas fa-arrow-up"title="Click to deactivate"></i>
+                            </a>
+                        @else
+                            <a class="btn btn-outline-info" href="{{route('category_active',['category_id'=>$cate->category_id])}}">
+                                <i class="fas fa-arrow-down"title="Click to activate"></i>
+                            </a>
+                        @endif
+                            <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#edit{{$cate->category_id}}">
+                                <i class="fas fa-edit"title="Click to activate"></i>
+                            </a>
+                            <a class="btn btn-outline-dark" href="{{route('cate_delete',['category_id'=>$cate->category_id])}}">
+                                <i class="fas fa-trash" title="Delete"></i>
+                            </a>
                     </td>
                 </tr>
                 @endforeach
