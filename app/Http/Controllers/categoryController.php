@@ -42,5 +42,13 @@ class categoryController extends Controller
         $category->delete();
         return back();
     }
+    public function update(Request $request){
+        $category=category::find($request->category_id);
+        $category->category_name = $request->category_name;
+        $category->order_number = $request->order_number;
+        $category->save();
+        return redirect('/category/manage')->with('sms','Category Updated');
+    }
+
 
 }

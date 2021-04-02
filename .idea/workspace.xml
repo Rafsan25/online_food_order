@@ -4,7 +4,6 @@
     <list default="true" id="0cbca2f1-e764-47f8-8064-e33b989c434a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/categoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/categoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/BackEnd/category/manageCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BackEnd/category/manageCategory.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -171,6 +170,8 @@
       <workItem from="1616702623946" duration="13000" />
       <workItem from="1616748174782" duration="8316000" />
       <workItem from="1617082349160" duration="8039000" />
+      <workItem from="1617364111340" duration="23000" />
+      <workItem from="1617391139418" duration="4135000" />
     </task>
     <servers />
   </component>

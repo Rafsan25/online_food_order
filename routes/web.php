@@ -27,5 +27,6 @@ Route::get('/category/manage','App\Http\Controllers\categoryController@manage')-
 Route::get('/category/active/{category_id}','App\Http\Controllers\categoryController@active')->name('category_active');
 Route::get('/category/inactive/{category_id}','App\Http\Controllers\categoryController@inactive')->name('inactive_cate');
 Route::get('/category/delete/{category_id}','App\Http\Controllers\categoryController@delete')->name('cate_delete');
+Route::post('/category/update','App\Http\Controllers\categoryController@update')->name('cate_update');
 /*Category ends here*/
 

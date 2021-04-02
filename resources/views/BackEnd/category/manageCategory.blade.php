@@ -46,6 +46,40 @@
                             </a>
                     </td>
                 </tr>
+
+                {{--=====Modal Start Here=====--}}
+
+                <div class="modal fade" id="edit{{$cate->category_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Update Category</h5>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="{{route('cate_update')}}" method="post">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label>Category Name</label>
+                                        <input type="text" class="form-control" name="category_name" value="{{$cate->category_name}}">
+                                        <input type="hidden" class="form-control" name="category_id" value="{{$cate->category_id}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" name="order_number" value="{{$cate->order_number}}">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="btn" class="btn btn-primary" value="Update">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{--=====Modal End Here=====--}}
                 @endforeach
                 </tbody>
             </table>
