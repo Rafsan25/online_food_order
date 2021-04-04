@@ -33,5 +33,10 @@ Route::post('/category/update','App\Http\Controllers\categoryController@update')
 /*Delivery Boy Starts here*/
 Route::get('/delivery/boy/add','App\Http\Controllers\deliveryBoyController@index')->name('show_deliveryBoy_add_table');
 Route::post('/delivery/boy/save','App\Http\Controllers\deliveryBoyController@save_boy')->name('delivery_save');
+Route::get('/delivery/boy/manage','App\Http\Controllers\deliveryBoyController@boy_manage')->name('delivery_boy_manage');
+Route::get('/delivery/boy/delete/{delivery_boy_id}','App\Http\Controllers\deliveryBoyController@boy_delete')->name('delivery_boy_delete');
+Route::get('/delivery/boy/inactive/{delivery_boy_id}','App\Http\Controllers\deliveryBoyController@boy_inactive')->name('delivery_boy_inactive');
+Route::get('/delivery/boy/active/{delivery_boy_id}','App\Http\Controllers\deliveryBoyController@boy_active')->name('delivery_boy_active');
+Route::post('/delivery/boy/update','App\Http\Controllers\deliveryBoyController@boy_update')->name('delivery_boy_update');
 /*Delivery Boy Ends here*/
 

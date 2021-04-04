@@ -69,6 +69,7 @@
                                         <input type="hidden" class="form-control" name="category_id" value="{{$cate->category_id}}">
                                     </div>
                                     <div class="form-group">
+                                        <label>Order Number</label>
                                         <input type="number" class="form-control" name="order_number" value="{{$cate->order_number}}">
                                     </div>
                                     <div class="form-group">
