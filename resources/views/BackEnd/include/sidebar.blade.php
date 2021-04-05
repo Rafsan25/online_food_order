@@ -71,6 +71,30 @@
                     </ul>
                 </li>
 
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dish
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('show_dish_table')}}" class="nav-link active">
+                                <i class="far fa-plus-square nav-icon"></i>
+                                <p>Add Dish</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('delivery_boy_manage')}}" class="nav-link">
+                                <i class="far fa-edit nav-icon"></i>
+                                <p>Manage Dish</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -28,8 +28,8 @@ Route::get('/category/active/{category_id}','App\Http\Controllers\categoryContro
 Route::get('/category/inactive/{category_id}','App\Http\Controllers\categoryController@inactive')->name('inactive_cate');
 Route::get('/category/delete/{category_id}','App\Http\Controllers\categoryController@delete')->name('cate_delete');
 Route::post('/category/update','App\Http\Controllers\categoryController@update')->name('cate_update');
-
 /*Category ends here*/
+
 /*Delivery Boy Starts here*/
 Route::get('/delivery/boy/add','App\Http\Controllers\deliveryBoyController@index')->name('show_deliveryBoy_add_table');
 Route::post('/delivery/boy/save','App\Http\Controllers\deliveryBoyController@save_boy')->name('delivery_save');
@@ -39,4 +39,9 @@ Route::get('/delivery/boy/inactive/{delivery_boy_id}','App\Http\Controllers\deli
 Route::get('/delivery/boy/active/{delivery_boy_id}','App\Http\Controllers\deliveryBoyController@boy_active')->name('delivery_boy_active');
 Route::post('/delivery/boy/update','App\Http\Controllers\deliveryBoyController@boy_update')->name('delivery_boy_update');
 /*Delivery Boy Ends here*/
+
+/*Dish Starts here*/
+Route::get('/dish/add','App\Http\Controllers\DishController@index')->name('show_dish_table');
+Route::post('/dish/save','App\Http\Controllers\DishController@save_dish')->name('save_dish_data');
+/*Dish Ends here*/
 
