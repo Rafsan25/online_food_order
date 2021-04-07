@@ -87,7 +87,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('delivery_boy_manage')}}" class="nav-link">
+                            <a href="{{route('manage_dish_table')}}" class="nav-link">
                                 <i class="far fa-edit nav-icon"></i>
                                 <p>Manage Dish</p>
                             </a>

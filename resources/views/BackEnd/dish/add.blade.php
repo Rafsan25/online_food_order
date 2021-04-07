@@ -22,7 +22,7 @@
                     </div>
                     <div class="card-body">
 
-                        <form action="{{route('save_dish_data')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('save_dish_table')}}" method="post" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group">
@@ -30,8 +30,8 @@
                                 <input type="text" class="form-control" name="dish_name">
                             </div>
                             <div class="form-group">
-                                <label>Category</label>
-                                <select name="" class="form-control">
+                                <label for="category_id">Category</label>
+                                <select id="category_id" name="category_id" class="form-control">
                                     <option>--Select Category--</option>
                                     @foreach($categories as $cate)
                                         <option value="{{$cate->category_id}}">{{$cate->category_name}}</option>

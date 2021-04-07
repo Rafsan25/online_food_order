@@ -44,7 +44,7 @@
                                 </a>
                             @endif
                             <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#edit{{$boy->delivery_boy_id}}">
-                                <i class="fas fa-edit"title="Click to activate"></i>
+                                <i class="fas fa-edit"title="Edit"></i>
                             </a>
                             <a class="btn btn-outline-dark" href="{{route('delivery_boy_delete',['delivery_boy_id'=>$boy->delivery_boy_id])}}">
                                 <i class="fas fa-trash" title="Delete"></i>
@@ -59,7 +59,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Update Category</h5>
+                                    <h5 class="modal-title">Update Delivery Boy</h5>
 
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true"></span>

@@ -42,6 +42,11 @@ Route::post('/delivery/boy/update','App\Http\Controllers\deliveryBoyController@b
 
 /*Dish Starts here*/
 Route::get('/dish/add','App\Http\Controllers\DishController@index')->name('show_dish_table');
-Route::post('/dish/save','App\Http\Controllers\DishController@save_dish')->name('save_dish_data');
+Route::post('/dish/save','App\Http\Controllers\DishController@save_dish')->name('save_dish_table');
+Route::get('/dish/manage','App\Http\Controllers\DishController@manage_dish')->name('manage_dish_table');
+Route::get('/dish/inactive/{dish_id}','App\Http\Controllers\DishController@inactive')->name('dish_inactive');
+Route::get('/dish/active/{dish_id}','App\Http\Controllers\DishController@active')->name('dish_active');
+Route::get('/dish/delete/{dish_id}','App\Http\Controllers\DishController@dish_delete')->name('delete_dish');
+Route::post('/dish/update','App\Http\Controllers\DishController@dish_update')->name('update_dish');
 /*Dish Ends here*/
 

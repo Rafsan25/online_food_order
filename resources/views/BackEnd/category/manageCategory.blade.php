@@ -39,7 +39,7 @@
                             </a>
                         @endif
                             <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#edit{{$cate->category_id}}">
-                                <i class="fas fa-edit"title="Click to activate"></i>
+                                <i class="fas fa-edit"title="Edit"></i>
                             </a>
                             <a class="btn btn-outline-dark" href="{{route('cate_delete',['category_id'=>$cate->category_id])}}">
                                 <i class="fas fa-trash" title="Delete"></i>
