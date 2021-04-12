@@ -18,6 +18,7 @@
                     <th>Category Name</th>
                     <th>Dish Detail</th>
                     <th>Dish Image</th>
+                    <th>Price</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -37,6 +38,9 @@
                         </td>
                         <td>
                             <img src="{{asset($dish->dish_image)}}" height="125" width="125" class="img-fluid img-thumbnail">
+                        </td>
+                        <td>
+                            {{$dish->price}}
                         </td>
                         <td>
                             @if($dish->dish_status==1)
@@ -94,6 +98,10 @@
                                         <div class="form-group">
                                             <label>Image</label>
                                             <input type="file" class="form-control" name="dish_image" accept="image/*">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Price</label>
+                                            <input type="text" class="form-control" name="price" value="{{$dish->price}}">
                                         </div>
                                         <div class="form-group">
                                             <input type="submit" name="btn" class="btn btn-primary" value="Update">

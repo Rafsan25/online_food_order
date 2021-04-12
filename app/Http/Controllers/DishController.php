@@ -27,6 +27,7 @@ class DishController extends Controller
         $dish->dish_detail=$request->dish_detail;
         $dish->dish_image=$imgUrl;
         $dish->dish_status=$request->dish_status;
+        $dish->price=$request->price;
         $dish->save();
         return back()->with('sms','Saved');
     }
@@ -51,6 +52,8 @@ class DishController extends Controller
             $dish->category_id=$request->category_id;
             $dish->dish_detail=$request->dish_detail;
             $dish->dish_image=$imgUrl;
+
+            $dish->price=$request->price;
 
             $dish->save();
             return back()->with('sms','Updated');

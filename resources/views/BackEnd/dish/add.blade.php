@@ -49,6 +49,10 @@
                                 <input type="file" class="form-control" name="dish_image">
                             </div>
                             <div class="form-group">
+                                <label>Price</label>
+                                <input type="text" class="form-control" name="price">
+                            </div>
+                            <div class="form-group">
                                 <label>Status</label>
                                 <div class="radio">
                                     <input type="radio" name="dish_status" value="1">Active

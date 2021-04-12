@@ -22,6 +22,9 @@ class CreateDishesTable extends Migration
             $table->integer('dish_status');
             $table->timestamps();
         });
+    /*    Schema::table('dishes',function ($table){
+            $table->integer('price');
+        });*/
     }
 
     /**
