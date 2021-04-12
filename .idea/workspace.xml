@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0cbca2f1-e764-47f8-8064-e33b989c434a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DishController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DishController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/BackEndSourceFile/dish_img/161380302_286836462843347_5582891643583014727_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/BackEnd/dish/manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BackEnd/dish/manage.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +198,7 @@
       <workItem from="1617776915418" duration="2424000" />
       <workItem from="1617787124522" duration="14396000" />
       <workItem from="1617895106890" duration="1989000" />
+      <workItem from="1618030298447" duration="763000" />
     </task>
     <servers />
   </component>

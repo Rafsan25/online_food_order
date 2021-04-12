@@ -36,7 +36,7 @@
                             {{$dish->dish_detail}}
                         </td>
                         <td>
-                            <img src="{{asset($dish->dish_image)}}" height="150" width="150" class="img-fluid img-thumbnail">
+                            <img src="{{asset($dish->dish_image)}}" height="125" width="125" class="img-fluid img-thumbnail">
                         </td>
                         <td>
                             @if($dish->dish_status==1)
