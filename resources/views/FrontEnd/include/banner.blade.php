@@ -45,49 +45,10 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <!-- Mega Menu -->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
-                                <ul class="dropdown-menu multi-column columns-3">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Food type</h6>
-                                                <li><a href="menu.html">Breakfast</a></li>
-                                                <li><a href="menu.html">Lunch</a></li>
-                                                <li><a href="menu.html">Dinner</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Cuisine</h6>
-                                                <li><a href="menu.html">Indian Recipes</a></li>
-                                                <li><a href="menu.html">American Recipes</a></li>
-                                                <li><a href="menu.html">French Recipes</a></li>
-                                                <li><a href="menu.html">Italian Recipes</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <ul class="multi-column-dropdown">
-                                                <h6>Box type</h6>
-                                                <li><a href="menu.html">Diet</a></li>
-                                                <li><a href="menu.html">Mini</a></li>
-                                                <li><a href="menu.html">Regular</a></li>
-                                                <li><a href="menu.html">Special</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </ul>
-                            </li>
+                            @foreach($categories as $category)
+                            <li><a href="index.html" >{{$category->category_name}}</a></li>
+                            @endforeach
                             <li><a href="about.html">About</a></li>
-                            <li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="icons.html">Web Icons</a></li>
-                                    <li><a href="codes.html">Short Codes</a></li>
-                                </ul>
-                            </li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
