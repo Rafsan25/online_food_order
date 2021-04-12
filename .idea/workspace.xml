@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0cbca2f1-e764-47f8-8064-e33b989c434a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DishController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DishController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_05_161040_create_dishes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_05_161040_create_dishes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/BackEnd/dish/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BackEnd/dish/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/BackEnd/dish/manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/BackEnd/dish/manage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,12 +155,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/FrontEndSourceFile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\online_food_order\public\FrontEndSourceFile" />
       <recent name="C:\xampp\htdocs\online_food_order\public\BackEndSourceFile" />
     </key>
   </component>
@@ -200,7 +198,8 @@
       <workItem from="1617787124522" duration="14396000" />
       <workItem from="1617895106890" duration="1989000" />
       <workItem from="1618030298447" duration="763000" />
-      <workItem from="1618238909614" duration="4266000" />
+      <workItem from="1618238909614" duration="4634000" />
+      <workItem from="1618250947390" duration="3223000" />
     </task>
     <servers />
   </component>
