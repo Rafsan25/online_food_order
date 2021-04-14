@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Providers;
-
+use App\Models\category;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        View::composer('FrontEnd.include.banner',function ($view){
+            $view->with('categories',category::where('category_status',1)->get());
+        });
     }
 }

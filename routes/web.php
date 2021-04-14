@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/','App\Http\Controllers\FrontEndController@index');
+Route::get('/category/dish/show','App\Http\Controllers\FrontEndController@dish_show')->name('category_dish');
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
