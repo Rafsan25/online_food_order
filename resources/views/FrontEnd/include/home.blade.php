@@ -78,7 +78,7 @@
                     <!-- Owl-Carousel -->
                     <div id="owl-demo" class="owl-carousel text-center agileinfo-gallery-row">
                         @foreach($dishes as $dish)
-                        <a href="products.html" class="item g1">
+                        <a href="{{route('category_dish',['category_id'=>$dish->dish_id])}}" class="item g1">
                             <img class="lazyOwl" src="{{$dish->dish_image}}" title="Our latest gallery" alt=""/>
                             <div class="agile-dish-caption">
                                 <h4>{{$dish->dish_name}}</h4>

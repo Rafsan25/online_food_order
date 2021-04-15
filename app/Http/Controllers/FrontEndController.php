@@ -12,7 +12,8 @@ class FrontEndController extends Controller
         $dishes=Dish::where('dish_status',1)->get();
         return view('FrontEnd.include.home',compact('dishes'));
     }
-    public function dish_show(){
-        return view('FrontEnd.include.dish');
+    public function dish_show($id){
+        $categoryDish=Dish::where('category_id',$id)->where('dish_status',1)->get();
+        return view('FrontEnd.include.dish',compact('categoryDish'));
     }
 }

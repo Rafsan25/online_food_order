@@ -46,7 +46,7 @@
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
                             @foreach($categories as $category)
-                            <li><a href="index.html" >{{$category->category_name}}</a></li>
+                            <li><a href="{{route('category_dish',['category_id'=>$category->category_id])}}">{{$category->category_name}}</a></li>
                             @endforeach
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
