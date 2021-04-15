@@ -27,5 +27,8 @@ class AppServiceProvider extends ServiceProvider
         View::composer('FrontEnd.include.banner',function ($view){
             $view->with('categories',category::where('category_status',1)->get());
         });
+        View::composer('FrontEnd.include.dish',function ($view){
+            $view->with('categories',category::where('category_status',1)->get());
+        });
     }
 }
