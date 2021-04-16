@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 });*/
 Route::get('/','App\Http\Controllers\FrontEndController@index');
 Route::get('/category/dish/show/{category_id}','App\Http\Controllers\FrontEndController@dish_show')->name('category_dish');
+Route::post('/add/cart','App\Http\Controllers\cartController@insert')->name('add_to_cart');
+Route::get('/cart/show','App\Http\Controllers\cartController@show')->name('cart_show');
+
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -26,14 +26,12 @@
                                     <h4>{{$dish->dish_name}}</h4>
                                     <p>{{$dish->dish_detail}}</p>
                                     <h6>{{$dish->price}}<sup>BDT</sup></h6>
-                                    <form action="#" method="post">
-                                        <input type="hidden" name="cmd" value="_cart">
-                                        <input type="hidden" name="add" value="1">
-                                        <input type="hidden" name="w3ls_item" value="Fish salad">
-                                        <input type="hidden" name="amount" value="{{$dish->price}}">
-                                        <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
-                                        <span class="w3-agile-line"> </span>
-                                        <a href="#" data-toggle="modal" data-target="#myModal1{{$dish->dish_id}}">More</a>
+                                    <form action="{{route('add_to_cart')}}" method="post">
+                                        {{--<input type="hidden" name="amount" value="{{$dish->price}}">--}}
+                                        <input type="hidden" name="dish_id" value="{{$dish->dish_id}}">
+                                        <a href="#" data-toggle="modal" data-target="#myModal1{{$dish->dish_id}}">
+                                            More <span class="w3-agile-line"> </span><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart
+                                        </a>
                                     </form>
                                 </div>
                             </div>
@@ -71,12 +69,13 @@
                                                     </ul>
                                                 </div>
                                                 <p class="single-price-text">Fusce a egestas nibh, eget ornare erat. Proin placerat, urna et consequat efficitur, sem odio blandit enim, sit amet euismod turpis est mattis lectus. Vestibulum maximus quam et quam egestas imperdiet. In dignissim auctor viverra. </p>
-                                                <form action="#" method="post">
-                                                    <input type="hidden" name="cmd" value="_cart" />
-                                                    <input type="hidden" name="add" value="1" />
-                                                    <input type="hidden" name="w3ls_item" value="France Special" />
-                                                    <input type="hidden" name="amount" value="18.00" />
-                                                    <button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                                                <form action="{{route('add_to_cart')}}" method="post">
+                                                    @csrf
+                                                    <input type="hidden" name="dish_id" value="{{$dish->dish_id}}">
+                                                    <h4>Quantity</h4><input type="number" min="1" name="qty">
+                                                    <button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true">
+                                                        </i> Add to cart
+                                                    </button>
                                                 </form>
                                                 <a href="#" class="w3ls-cart w3ls-cart-like"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to Wishlist</a>
                                                 <div class="single-page-icons social-icons">
