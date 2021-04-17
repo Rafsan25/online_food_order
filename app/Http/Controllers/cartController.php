@@ -18,12 +18,10 @@ class cartController extends Controller
             'options'=>['image'=>$dish->dish_image],
 
         ]);
-        return redirect('cart_show')->with('');
+        return redirect('cart_show');
     }
     public function show(){
         $CartDish=Cart::content();
-        return $CartDish;
         return view('FrontEnd.cart.show',compact('CartDish'));
     }
-/*<button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>*/
 }
