@@ -24,4 +24,8 @@ class cartController extends Controller
         $CartDish=Cart::content();
         return view('FrontEnd.cart.show',compact('CartDish'));
     }
+    public function remove($rowId){
+        Cart::remove($rowId);
+        return back();
+    }
 }

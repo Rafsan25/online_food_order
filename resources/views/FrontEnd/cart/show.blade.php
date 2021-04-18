@@ -16,6 +16,7 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">Remove</th>
                                 <th scope="col" class="text-success">Item Name</th>
                                 <th scope="col">Image</th>
                                 <th scope="col">Price</th>
@@ -27,11 +28,18 @@
                             @php($i=1)
                             @foreach($CartDish as $dish)
                             <tr>
-                                <th scope="roe">{{$i++}}</th>
+                                <th scope="row">{{$i++}}</th>
+                                <th scope="row">
+                                    <a href="{{route('remove_item',['rowId'=>$dish->rowId])}}" type="button" class="btn btn-danger">
+                                        <span aria-hidden="true"></span>
+                                    </a>
+                                </th>
                                 <td>{{$dish->name}}</td>
                                 <td><img src="{{asset($dish->options->image)}}" style="width: 50px; height: 50px"></td>
-                                <td>{{$dish->price}}</td>
+                                <td>{{$dish->price}} BDT</td>
                                 <td>{{$dish->qty}}</td>
+                                <td>{{$subTotal=$dish->price*$dish->qty}} BDT</td>
+                                <td>{{$dish->subTotal}}</td>
                             </tr>
                             @endforeach
                             </tbody>
