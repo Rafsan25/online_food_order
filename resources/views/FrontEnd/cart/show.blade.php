@@ -44,7 +44,7 @@
                                 </td>
                                 <td>{{$subTotal=$dish->price*$dish->qty}} BDT</td>
                                 <td>{{$dish->subTotal}}</td>
-                                {{$sum=$sum+$subTotal}}
+                                <input type="hidden" value="{{$sum=$sum+$subTotal}}">
                             </tr>
                             @endforeach
                             <tr>
@@ -60,6 +60,12 @@
                         </table>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-9 product-w3ls-right">
+                <a href="{{route('check_out')}}" class="btn btn-info" style="float: right">
+                    <i class="fa fa-shopping-cart"></i>
+                    Checkout
+                </a>
             </div>
         </div>
     </div>
