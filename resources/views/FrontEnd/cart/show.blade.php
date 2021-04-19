@@ -19,15 +19,17 @@
                                 <th scope="col">Remove</th>
                                 <th scope="col" class="text-success">Item Name</th>
                                 <th scope="col">Image</th>
-                                <th scope="col">Price</th>
+                                {{--<th scope="col">Price</th>--}}
                                 <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
                                 <th scope="col">Total Price</th>
                             </tr>
                             </thead>
                             <tbody>
                             @php($i=1)
+                            @php($sum=0)
                             @foreach($CartDish as $dish)
-                            <tr>
+                                <tr style="border-bottom: 1px solid black">
                                 <th scope="row">{{$i++}}</th>
                                 <th scope="row">
                                     <a href="{{route('remove_item',['rowId'=>$dish->rowId])}}" type="button" class="btn btn-danger">
@@ -36,12 +38,24 @@
                                 </th>
                                 <td>{{$dish->name}}</td>
                                 <td><img src="{{asset($dish->options->image)}}" style="width: 50px; height: 50px"></td>
-                                <td>{{$dish->price}} BDT</td>
-                                <td>{{$dish->qty}}</td>
+                                {{--<td>{{$dish->price}} BDT</td>--}}
+                                <td>
+                                    {{$dish->qty}}
+                                </td>
                                 <td>{{$subTotal=$dish->price*$dish->qty}} BDT</td>
                                 <td>{{$dish->subTotal}}</td>
+                                {{$sum=$sum+$subTotal}}
                             </tr>
                             @endforeach
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-bold">{{$sum}} BDT</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

@@ -30,7 +30,7 @@
         </div>
         <!-- //header-one -->
         <!-- navigation -->
-        <div class="navigation agiletop-nav">
+        <div class="navigation agiletop-nav" style="background-color: transparent">
             <div class="container">
                 <nav class="navbar navbar-default">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,7 +66,7 @@
     </div>
     <!-- //header-end -->
     <!-- banner-text -->
-    <div class="banner-text">
+    <div class="banner-text" style="background-image: url('https://pickyourtrail.com/blog/wp-content/uploads/2020/05/ultimatebali.jpg')">
         <div class="container">
             <h2>Delicious food from the <br> <span>Best Chefs For you.</span></h2>
             <div class="agileits_search">
