@@ -41,7 +41,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a href="index.html">Staple<span>Best Food Collection</span></a></h1>
+                        <h1><a href="index.html">Online Food Order<span>Best Food Collection</span></a></h1>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav navbar-right">
