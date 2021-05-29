@@ -18,7 +18,7 @@ class cartController extends Controller
             'options'=>['image'=>$dish->dish_image],
 
         ]);
-        return redirect('cart_show');
+        return redirect('cart/show');
     }
     public function show(){
         $CartDish=Cart::content();
